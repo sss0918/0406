@@ -1,5 +1,15 @@
 # 0406
 ```cpp
+int trigPin = 12;
+int echoPin = 11;
+long duration, cm, inches;
+
+void setup(){
+ Serial.begin (9600);
+ pinMode(trigPin, OUTPUT);
+ pinMode(echoPin, INPUT);
+  } 
+  
 void loop() {
  digitalWrite(trigPin, LOW);
  delayMicroseconds(5);
